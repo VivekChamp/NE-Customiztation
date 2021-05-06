@@ -86,7 +86,6 @@ app_license = "MIT"
 # override_doctype_class = {
 # 	"ToDo": "custom_app.overrides.CustomToDo"
 # }
-
 # Document Events
 # ---------------
 # Hook on document methods and events
@@ -98,6 +97,11 @@ app_license = "MIT"
 # 		"on_trash": "method"
 #	}
 # }
+doc_events = {
+ 	"Item": {
+ 		"validate": "customization.item.customize_name"
+ 	}
+}
 
 # Scheduled Tasks
 # ---------------
